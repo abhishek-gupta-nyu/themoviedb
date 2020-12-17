@@ -50,3 +50,22 @@ write.csv(df.final,"C:/DataSet/BA/1721.csv")
 df.1718 = rbind(dfb, dfa)
 write.csv(df.1718,"C:/DataSet/BA/1718.csv")
 
+
+##############################################
+
+df2017_1<-read.csv("C:/Users/Abhishek/Desktop/BA/2017/2017-1to5.csv",header = TRUE, stringsAsFactors = FALSE)
+df2017_2<-read.csv("C:/Users/Abhishek/Desktop/BA/2017/2017-6to10.csv",header = TRUE, stringsAsFactors = FALSE)
+df2017_3<-read.csv("C:/Users/Abhishek/Desktop/BA/2017/2017-11to12.csv",header = TRUE, stringsAsFactors = FALSE)
+
+df = rbind(df2017_1, df2017_2,  df2017_3)
+
+write.csv(df,"C:/Users/Abhishek/Desktop/BA/2017.csv")
+
+
+df2017_01<-read.csv("C:/Users/Abhishek/Desktop/2017-01.csv",header = TRUE, stringsAsFactors = FALSE)
+df2017_25<-read.csv("C:/Users/Abhishek/Desktop/2017-25.csv",header = TRUE, stringsAsFactors = FALSE)
+
+df = rbind(df2017_01, df2017_25)
+
+write.csv(df,"C:/Users/Abhishek/Desktop/2017-15.csv")
+
